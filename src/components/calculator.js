@@ -10,6 +10,7 @@ const Calculator = () => {
   };
 
   return (
+
     <main>
       <section className="calculator">
         <p className="display">{(calc.total || '') + (calc.operation || '') + (calc.next || '') || 0}</p>
