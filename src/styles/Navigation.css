@@ -1,33 +1,33 @@
 .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .nav__logo {
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 30px;
 }
 
 .nav__links {
-    margin-right: 100px;
-    display: flex;
-    gap: 30px;
+  margin-right: 100px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav__links > * {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1.25em;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out;
-    padding: 10px;
-    color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  padding: 10px;
+  color: white;
 }
 
 .nav__links > *:hover {
-   border: 1px solid white;
-   transform: rotate(20deg);
+  border: 1px solid white;
+  transform: rotate(20deg);
 }
