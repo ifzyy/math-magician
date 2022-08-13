@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/prefer-stateless-function */
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import CalculatorPage from './components/calculatorpage';
+import Home from './components/home';
+import Navigation from './components/Navigation';
+import Quotes from './components/Quotes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Navigation />
+        <Routes>
+          {/* Home Component */}
+          <Route path="/" element={<Home />} />
+          {/* Calculator Component */}
+          <Route path="/calculator" element={<CalculatorPage />} />
+          {/* Quotes Component */}
+          <Route path="/quotes" element={<Quotes />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
